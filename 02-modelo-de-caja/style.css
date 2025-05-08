@@ -1,0 +1,33 @@
+/* Aplicamos estilos para visualizar claramente el modelo de caja 
+Algunos atributos son: 
+content: el contenido del elemento.
+padding: espacio interior (entre contenido y borde).
+border: borde que rodea al elemento.
+margin: espacio exterior (fuera del borde)
+*/
+
+
+body {
+    font-family: sans-serif;
+    background-color: #f0f0f0;
+    margin: 2rem;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #2d3436;
+  }
+  
+  .caja {
+    background-color: #dff9fb;
+    padding: 20px;
+    border: 4px solid #00cec9;
+    margin: 20px 0;
+    width: 300px;
+  }
+  
+  .caja-secundaria {
+    background-color: #ffeaa7;
+    border-color: #fdcb6e;
+  }
+  
