@@ -1,0 +1,87 @@
+/* Estilos generales (Mobile First) */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    background-color: #f4f4f4;
+  }
+  
+  .header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .menu {
+    display: none; /* oculto en móviles */
+  }
+  
+  .main {
+    padding: 1rem;
+  }
+  
+  .contenido {
+    background-color: white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .sidebar img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+  
+  /* Tablet (>=600px) */
+  @media (min-width: 600px) {
+    .menu {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 0.5rem;
+    }
+  
+    .menu a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  
+    .main {
+      display: flex;
+      gap: 1rem;
+    }
+  
+    .contenido {
+      flex: 2;
+    }
+  
+    .sidebar {
+      flex: 1;
+    }
+  }
+  
+  /* Escritorio (>=992px) */
+  @media (min-width: 992px) {
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      text-align: left;
+    }
+  
+    .menu {
+      justify-content: flex-end;
+    }
+  }
+  
